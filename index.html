@@ -3,70 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
 </head>
 
 <body>
+       
+            <header class="header">
+           <div class="logo">MUSIC HUB</div>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="#tables">Tables</a>
+                <a href="#lists">Lists</a>
+                <a href="#images">Images</a>
+                <a href="#forms"> Forms</a>
+            </nav></header>
+<!--Home section-->
+<section id="home" class="hero">
+    <div class="home-content">
+    <h1>Welcome to Music Hub🎵🎶🎤</h1>
+</div>
+</section>
 
-<h1>Welcome to My Website</h1>
 
-<p>
-    <a href="about.html" title="Go to About Page">About Us</a>
-</p>
 
-<h2>Clickable Image</h2>
-
-<a href="about.html" title="Click image to visit About Page">
-    <img src="C:\Users\USER\Downloads\music.jpeg"alt="About page link image" width="300" height="400">
-</a>
+<!--Table section-->
+<section id="tables">
+<div class="tables-content">
 <h1><u><b><center>TABLES</center></b></u></h1>
-<div class="table">
+
     </table><h1> Table 1</h1>
     <table border="1" width="50%" cellpadding="8" cellspacing="0">
-  <caption><center><b>Monthly savings</b></center></caption>
+  <caption><center><b>Artists's infos</b></center></caption>
   <thead>
 <tr>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Expenses</th>
-    <th>Donations</th>
+    <th>Artist</th>
+    <th>Country</th>
+    <th>Greatest Hit</th>
+    <th>Views</th>
   </tr>
   </thead>
   <tbody>
   
     <tr>
-    <td>January</td>
-    <td>$100</td>
-    <td>$50</td>
-    <td>$10</td>
+    <td>Ed Sheeran</td>
+    <td>England</td>
+    <td>Shape of you</td>
+    <td>6.6B</td>
     </tr>
    
     <tr>
-    <td>May</td>
-    <td>$1000</td>
-    <td>$500</td>
-    <td>$100</td>
+    <td>Adele</td>
+    <td>England</td>
+    <td>Hello</td>
+    <td>3.2B</td>
    </tr>
 
    <tr>
-    <td>August</td>
-    <td>$2000</td>
-    <td>$50</td>
-    <td>$10</td>
+    <td>BTS</td>
+    <td>South Korea</td>
+    <td>Dynamite</td>
+    <td>2B</td>
     </tr>
 
     <tr>
-    <td>November</td>
-    <td>$10000</td>
-    <td>$800</td>
-    <td>$1300</td>
+    <td>Celine Dion</td>
+    <td>Canada</td>
+    <td>My Heart Will Go On</td>
+    <td>1.3B</td>
     </tr>
    
     <tr>
-    <td>March</td>
-    <td>$50000</td>
-    <td>$800</td>
-    <td>$1300</td>
+    <td>Whitney Houston</td>
+    <td>USA</td>
+    <td>I will Always Love You</td>
+    <td>1.8B</td>
     </tr>
  </tbody>
     </table>
@@ -121,9 +133,30 @@
     </tr>
 </table>
 </div>
+</section>
 
-<h1><u><b><center>LISTS</center></b></u></h1>
-<div>
+<!--Image section-->
+<section id="images">
+    <div class="images-content"></div>
+<h1><u><b><center>IMAGES</center></b></u></h1>
+<h3>Here are some of your favorite artists... </h3>
+
+
+</div>
+<div class="image-row">
+  <img src="C:\Users\USER\OneDrive\Desktop\Second assignment\Ed Sheeran.jpeg" alt="Ed Sheeran">
+  <img src="C:\Users\USER\OneDrive\Desktop\Second assignment\Adele.jpeg" alt="Adele">
+  <img src="C:\Users\USER\OneDrive\Desktop\Second assignment\Celine.jpeg" alt="Celine">
+  <img src="C:\Users\USER\OneDrive\Desktop\Second assignment\Whitney.jpeg" alt="Whitney">
+  <img src="C:\Users\USER\OneDrive\Desktop\Second assignment\BTS.jpeg" alt="BTS">
+</div>
+
+</section>
+
+<!--List section-->
+<section id="lists">
+  <div class="lists-content">
+    <h1><u><b><center>LISTS</center></b></u></h1>
 <h2>Steps to Create a Simple Website</h2>
 
 <ol>
@@ -143,12 +176,15 @@
     <li>Testing webpages</li>
 </ul>
 </div>
+</section>
 
-<h1><u><b><center>FORMS</center></b></u></h1>
-<div>
-    <h2>Student Registration Form</h2>
 
-<form>
+<!--Forms section-->
+<section id="forms">
+  <div class="forms-content">
+  <h1><u><b><center>FORMS</center></b></u></h1>
+  <h2>Vote for your favorite song</h2>
+  <form>
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" placeholder="John Doe"><br><br>
 
@@ -161,18 +197,55 @@
     
     <input type="radio" id="female" name="gender" value="Female">
     <label for="female">Female</label><br><br>
+    <label><b>Which one do you prefer?</b></label><br><br>
     <input type="checkbox" value="box">
-    <label>First</label><br><br>
+    <label>Shape of You by Ed Sheeran</label><br><br>
     <input type="checkbox" value="box">
-    <label>First</label><br><br>
+    <label>Hello by Adele</label><br><br>
     <input type="checkbox" value="box">
-    <label>First</label><br><br>
+    <label>Dynamite by BTS</label><br><br>
     <input type="checkbox" value="box">
-    <label>First</label><br><br>
+    <label>My Heart Will Go On by Celine Dion</label><br><br>
+    <input type="checkbox" value="box">
+    <label>I will Always Love You by Whitney Houston</label><br><br>
     <input type="submit" value="Register">
     <input type="reset" value="Clear">
 </div>
-
+</section>
 </form>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>MUSIC HUB</h3>
+      <p>
+        Music Hub is a simple website created to practice HTML and CSS.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#tables">Tables</a>
+      <a href="#lists">Lists</a>
+      <a href="#images">Images</a>
+      <a href="#forms">Forms</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: info@musichub.com</p>
+      <p>Phone: +250 786 790 987</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Music Hub. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>

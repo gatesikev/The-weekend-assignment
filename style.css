@@ -1,0 +1,181 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 40px;
+  scroll-margin-top: 120px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;  
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #111;
+}
+nav a {
+  text-decoration: none;
+  color:#7fffd4;
+  margin: 0 15px;
+  font-weight: bold;
+}
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #7fffd4;
+}
+nav a:hover {
+  text-decoration:none;
+  color: whitesmoke;
+}
+
+.hero h1 {
+  color: #111; /* dark color so it is visible */
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 0;
+  padding-top: 80px; /* same height as header */
+  background-color: #f0f8ff; /* Light blue, you can change this */
+  margin: 0;
+}
+@media(max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 15px;
+  }
+.nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+.hero {
+  height: 400px;
+  background-image: url("C:\Users\USER\Downloads\music.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 36px;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap; /* images go to next line if screen is small */
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.image-row img {
+  width: 200px; /* fixed width */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+  color: #7fffd4;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #7fffd4;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #5fd2b2;
+}
+#about-page img {
+  display: block;
+  margin: 20px auto; /* center the image */
+  cursor: pointer;    /* shows hand icon when hovering */
+  transition: transform 0.2s;
+}
+
+#about-page img:hover {
+  transform: scale(1.1); /* grows slightly when hovering */
+}
+
+
+
+
+
