@@ -16,7 +16,5 @@ Features
 
 ✅ Hover effects on images and buttons.
 
-✅ Background colors and optional background images for modern look.
-
 Done by Front-end developer & Web design enthusiast Kevine GATESI 
 
