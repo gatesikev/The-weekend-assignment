@@ -34,7 +34,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  color: #111; /* dark color so it is visible */
+  color: white; /* dark color so it is visible */
   font-size: 3rem;
   text-align: center;
 }
@@ -45,8 +45,9 @@ body{
     font-size: 20px;
     margin: 0;
   padding-top: 80px; /* same height as header */
-  background-color: #f0f8ff; /* Light blue, you can change this */
+  background-color: black; /* Light blue, you can change this */
   margin: 0;
+  color: white;
 }
 @media(max-width: 768px) {
   .header {
@@ -97,6 +98,32 @@ body{
   transform: scale(1.05);
 }
 
+.forms-content{
+  border: solid;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #111;
+  background-color:#84fddb;
+  padding: 20px;
+  
+}
+
+#submit{
+  background-color:black;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+#reset{
+  background-color:black;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
 .footer {
   background-color: #111;
   color: #fff;

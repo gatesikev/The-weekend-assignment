@@ -22,7 +22,7 @@
 <!--Home section-->
 <section id="home" class="hero">
     <div class="home-content">
-    <h1>Welcome to Music Hub🎵🎶🎤</h1>
+    <h1>Welcome to the Music Hub🎵🎶🎤</h1>
 </div>
 </section>
 
@@ -185,6 +185,7 @@
   <h1><u><b><center>FORMS</center></b></u></h1>
   <h2>Vote for your favorite song</h2>
   <form>
+    <fieldset><legend><b>Personal Information</b></legend>
     <label for="name">Full Name:</label>
     <input type="text" required id="name" name="name" placeholder="John Doe"><br><br>
 
@@ -194,9 +195,9 @@
     <label>Gender:</label>
     <input type="radio" id="male" name="gender" value="Male">
     <label for="male">Male</label>
-    
     <input type="radio" id="female" name="gender" value="Female">
     <label for="female">Female</label><br><br>
+    </fieldset>
     <label><b>Which one do you prefer?</b></label><br><br>
     <input type="checkbox" value="box">
     <label>Shape of You by Ed Sheeran</label><br><br>
@@ -208,8 +209,10 @@
     <label>My Heart Will Go On by Celine Dion</label><br><br>
     <input type="checkbox" value="box">
     <label>I will Always Love You by Whitney Houston</label><br><br>
-    <input type="submit" value="Register">
-    <input type="reset" value="Clear">
+    
+     <input type="submit" id="submit" value="Register" >
+     <input type="reset" id="reset" value="Clear" >
+   
 </div>
 </section>
 </form>
