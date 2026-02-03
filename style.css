@@ -98,32 +98,126 @@ body{
   transform: scale(1.05);
 }
 
-.forms-content{
-  border: solid;
-  border-radius: 20px;
-  box-sizing: border-box;
-  color: #111;
-  background-color:#84fddb;
-  padding: 20px;
-  
+/* Form*/
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-decoration: underline;
 }
 
-#submit{
-  background-color:black;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  color: #fff;
-  font-weight: bold;
+/* Forms Container */
+.forms-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
-#reset{
-  background-color:black;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  color: #fff;
-  font-weight: bold;
+
+/* Form Headings */
+.forms-content h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
 }
+
+/* Fieldset */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Legend */
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+/* Checkbox Group */
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+input[type="reset"] {
+  background-color: #ccc;
+}
+
+input[type="reset"]:hover {
+  background-color: #999;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
 .footer {
   background-color: #111;
   color: #fff;
@@ -201,8 +295,7 @@ body{
 #about-page img:hover {
   transform: scale(1.1); /* grows slightly when hovering */
 }
-
-
+ 
 
 
 

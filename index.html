@@ -181,41 +181,59 @@
 
 <!--Forms section-->
 <section id="forms">
+  <h1 class="section-title">FORMS</h1>
+
   <div class="forms-content">
-  <h1><u><b><center>FORMS</center></b></u></h1>
-  <h2>Vote for your favorite song</h2>
-  <form>
-    <fieldset><legend><b>Personal Information</b></legend>
-    <label for="name">Full Name:</label>
-    <input type="text" required id="name" name="name" placeholder="John Doe"><br><br>
+    <h2>Vote for Your Favorite Song</h2>
 
-    <label for="email">Email Address:</label>
-    <input type="email" required id="email" name="email"><br><br>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
 
-    <label>Gender:</label>
-    <input type="radio" id="male" name="gender" value="Male">
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="Female">
-    <label for="female">Female</label><br><br>
-    </fieldset>
-    <label><b>Which one do you prefer?</b></label><br><br>
-    <input type="checkbox" value="box">
-    <label>Shape of You by Ed Sheeran</label><br><br>
-    <input type="checkbox" value="box">
-    <label>Hello by Adele</label><br><br>
-    <input type="checkbox" value="box">
-    <label>Dynamite by BTS</label><br><br>
-    <input type="checkbox" value="box">
-    <label>My Heart Will Go On by Celine Dion</label><br><br>
-    <input type="checkbox" value="box">
-    <label>I will Always Love You by Whitney Houston</label><br><br>
-    
-     <input type="submit" id="submit" value="Register" >
-     <input type="reset" id="reset" value="Clear" >
-   
-</div>
+        <label for="name">Full Name:</label>
+        <input type="text" required id="name" name="name" placeholder="John Doe">
+
+        <label for="email">Email Address:</label>
+        <input type="email" required id="email" name="email" placeholder="example@email.com">
+
+        <label>Gender:</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favorite Songs</legend>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="song1" name="song" value="Shape of You">
+          <label for="song1">Shape of You by Ed Sheeran</label>
+
+          <input type="checkbox" id="song2" name="song" value="Hello">
+          <label for="song2">Hello by Adele</label>
+
+          <input type="checkbox" id="song3" name="song" value="Dynamite">
+          <label for="song3">Dynamite by BTS</label>
+
+          <input type="checkbox" id="song4" name="song" value="My Heart Will Go On">
+          <label for="song4">My Heart Will Go On by Celine Dion</label>
+
+          <input type="checkbox" id="song5" name="song" value="I Will Always Love You">
+          <label for="song5">I Will Always Love You by Whitney Houston</label>
+        </div>
+      </fieldset>
+
+      <div class="form-buttons">
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+      </div>
+
+    </form>
+  </div>
 </section>
-</form>
 
 <footer class="footer">
   <div class="footer-container">
