@@ -7,39 +7,6 @@ section {
   scroll-margin-top: 120px;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  align-items: center;  
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: #111;
-}
-nav a {
-  text-decoration: none;
-  color:#7fffd4;
-  margin: 0 15px;
-  font-weight: bold;
-}
-.logo {
-  font-size: 32px;
-  font-weight: bold;
-  color: #7fffd4;
-}
-nav a:hover {
-  text-decoration:none;
-  color: whitesmoke;
-}
-
-.hero h1 {
-  color: white; /* dark color so it is visible */
-  font-size: 3rem;
-  text-align: center;
-}
-
-
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
@@ -49,20 +16,113 @@ body{
   margin: 0;
   color: white;
 }
-@media(max-width: 768px) {
-  .header {
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Hamburger Menu */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  width: 30px;
+  height: 22px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background-color: white;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  top: -8px;
+}
+
+.nav-toggle-label span::after {
+  top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background-color: #333;
     flex-direction: column;
-    align-items: flex-start;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
   }
 
-  .nav {
-    margin-top: 15px;
+  .navbar a {
+    padding: 15px;
+    border-top: 1px solid #444;
   }
-.nav a {
-    display: block;
-    margin: 10px 0;
+
+  .nav-toggle:checked ~ .navbar {
+    max-height: 500px; /* enough to show all links */
+  }
+
+  .nav-toggle-label {
+    display: flex;
   }
 }
+
 .hero {
   height: 400px;
   background-image: url("C:\Users\USER\Downloads\music.jpeg");
